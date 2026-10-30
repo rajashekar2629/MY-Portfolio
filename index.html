@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rajashekar | Portfolio</title>
+  <meta name="description" content="Portfolio of Ardha Rajashekar Reddy, Software Engineer Intern and CSE (Data Science) graduate in Hyderabad. Python, SQL, machine learning and backend development.">
+  <meta name="theme-color" content="#F7F5FF">
+  <meta property="og:title" content="Rajashekar | Portfolio">
+  <meta property="og:description" content="Software Engineer Intern and CSE (Data Science) graduate building AI-driven backend systems in Python.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%235B3FE0'/%3E%3Ctext x='32' y='43' font-size='30' text-anchor='middle' fill='white' font-family='Georgia,serif'%3ER%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add("js");</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main">
+      <a class="brand" href="#home" id="brand" aria-label="Home"></a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#beyond">Beyond Code</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow" id="hero-eyebrow"></p>
+          <h1 id="hero-name"></h1>
+          <p class="hero-role" id="hero-role"></p>
+          <p class="hero-tagline" id="hero-tagline"></p>
+          <div class="btn-row">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" id="resume-btn" download>Download Resume</a>
+          </div>
+          <ul class="social" id="hero-social" aria-label="Social links"></ul>
+        </div>
+        <div class="hero-photo">
+          <div class="photo-stage" id="photo-stage">
+            <div class="photo-frame">
+              <img id="hero-img" alt="Portrait of Ardha Rajashekar Reddy" width="720" height="888">
+            </div>
+            <!-- Water bubbles are drawn here by script.js, then they fly away -->
+            <div class="bubbles" id="bubbles" aria-hidden="true"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section alt">
+      <div class="container">
+        <h2 class="section-title reveal">About me</h2>
+        <div class="about-grid">
+          <div class="about-text reveal" id="about-text"></div>
+          <dl class="facts reveal" id="about-facts"></dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Experience</h2>
+        <div class="timeline" id="experience-list"></div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section alt">
+      <div class="container">
+        <h2 class="section-title reveal">Projects</h2>
+        <p class="section-sub reveal">Selected work, built end to end.</p>
+        <div class="projects-grid" id="projects-list"></div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Skills</h2>
+        <div class="skills-grid" id="skills-list"></div>
+      </div>
+    </section>
+
+    <!-- EDUCATION + CERTIFICATIONS -->
+    <section id="education" class="section alt">
+      <div class="container two-col">
+        <div>
+          <h2 class="section-title reveal">Education</h2>
+          <div class="stack" id="education-list"></div>
+        </div>
+        <div>
+          <h2 class="section-title reveal">Certifications</h2>
+          <ul class="cert-list" id="cert-list"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- BEYOND CODE -->
+    <section id="beyond" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Beyond code</h2>
+        <div class="beyond-card reveal" id="beyond-card"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title reveal">Get in touch</h2>
+        <p class="section-sub reveal">The quickest way to reach me is by email or LinkedIn.</p>
+        <ul class="contact-list reveal" id="contact-list"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p id="footer-text"></p>
+      <a href="#top" class="to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <noscript>
+    <p style="padding:24px;text-align:center">Please enable JavaScript to view this portfolio.</p>
+  </noscript>
+
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
